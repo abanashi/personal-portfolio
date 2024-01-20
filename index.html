@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 16px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caleb Abernathy Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body
+    id="bootstrap-overrides"
+    data-bs-spy="scroll"
+    data-bs-target="#header"
+    data-bs-theme="dark"
+  >
+    <!-- Header -->
+    <section id="header">
+      <nav
+        id="navbar-header"
+        class="custom-navbar ms-auto navbar navbar-expand-lg px-3 mb-5 fixed-top navbarScroll"
+      >
+        <div class="container-xxl bd-gutter flex-wrap flex-lg-nowrap">
+          <a class="navbar-brand p-0 me-0 me-lg-2 px-3" href="#header"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-rocket-takeoff-fill custom-navbar-logo"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.6 3.6 0 0 0-.108-.563 2 2 0 0 0-.078-.23V.453c-.073-.164-.168-.234-.352-.295a2 2 0 0 0-.16-.045 4 4 0 0 0-.57-.093c-.49-.044-1.19-.03-2.08.188-1.536.374-3.618 1.343-6.161 3.604l-2.4.238h-.006a2.55 2.55 0 0 0-1.524.734L.15 7.17a.512.512 0 0 0 .433.868l1.896-.271c.28-.04.592.013.955.132.232.076.437.16.655.248l.203.083c.196.816.66 1.58 1.275 2.195.613.614 1.376 1.08 2.191 1.277l.082.202c.089.218.173.424.249.657.118.363.172.676.132.956l-.271 1.9a.512.512 0 0 0 .867.433l2.382-2.386c.41-.41.668-.949.732-1.526zm.11-3.699c-.797.8-1.93.961-2.528.362-.598-.6-.436-1.733.361-2.532.798-.799 1.93-.96 2.528-.361s.437 1.732-.36 2.531Z"
+              />
+              <path
+                d="M5.205 10.787a7.6 7.6 0 0 0 1.804 1.352c-1.118 1.007-4.929 2.028-5.054 1.903-.126-.127.737-4.189 1.839-5.18.346.69.837 1.35 1.411 1.925"
+              />
+            </svg>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mb-2 mb-lg-0 nav nav-pills">
+              <!-- Remove ms-auto for left alignment -->
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link custom-nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link custom-nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Theme
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-toggles2"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2s-.195-1.412-.535-2"
+                    />
+                    <path
+                      d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8m.535-10a4 4 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126q.138-.534.41-1H4a2 2 0 1 0 0 4z"
+                    />
+                    <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0" />
+                  </svg>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-brightness-high-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"
+                        />
+                      </svg>
+                      Light Mode</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-moon-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+                        />
+                      </svg>
+                      Dark Mode
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-circle-half"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"
+                        />
+                      </svg>
+                      Use my system preferences
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="section">
+      <div class="container col-xxl-8 px-4 pt-3 pb-5 mb-5 border-bottom">
+        <div class="row flex-lg-row-reverse align-items-center g-5 mt-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="./images/caleb-pfp.jpeg"
+              class="d-block mx-lg-auto img-fluid profile-image"
+              alt="caleb profile image"
+              width="400px;"
+              height="400px;"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <p class="fw-bold text__callout">Hello, I'm</p>
+            <h1 class="display-5 fw-bold lh-1 mb-3 heading__callout">
+              Caleb Abernathy
+            </h1>
+            <p class="">
+              A Technical Program Manager
+              <span class="fw-bold text__callout">From St. Louis</span>
+            </p>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <!-- Download CV Button -->
+              <a
+                href="./documents/Caleb Abernathy 2024 Resume.pdf"
+                class="btn custom-primary-btn btn-lg px-4 me-md-2"
+                download="Caleb-Abernathy-2024-Resume.pdf"
+              >
+                Download CV
+              </a>
+              <a
+                href="#contact"
+                class="btn custom-secondary-btn btn-lg px-4 me-md-2"
+                >Contact Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section">
+      <!-- Feature Cards -->
+      <div class="container px-4 mb-5 border-bottom" id="hanging-icons">
+        <p id="about" class="section-subheader">Get to Know More</p>
+        <h2 class="fw-bold section-header mb-5">About Me</h2>
+
+        <div class="row g-4 py-3 mb-5">
+          <!-- Experience -->
+          <div class="col-lg-4 aboutme-cards">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+            >
+              <i class="bi bi-briefcase-fill aboutme-icon"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Experience</h3>
+            <ul class="list-unstyled">
+              <li class="list-item-hover">6+ years experience</li>
+              <li class="list-item-hover">
+                Proven leader in cross-functional strategies
+              </li>
+              <li class="list-item-hover">
+                Innovation driver for customer-centric outcomes
+              </li>
+              <!-- Add more list items for each relevant point -->
+            </ul>
+          </div>
+          <!-- Education -->
+          <div class="col-lg-4 aboutme-cards">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+            >
+              <i class="bi bi-mortarboard-fill aboutme-icon"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Education</h3>
+            <ul class="list-unstyled">
+              <li class="list-item-hover">BS in CMIS - 4.0 GPA</li>
+              <li class="list-item-hover">2x Student of the Year</li>
+              <li class="list-item-hover">
+                Certified in Project Management & Front-End Dev
+              </li>
+              <!-- Add more list items for each relevant point -->
+            </ul>
+          </div>
+
+          <!-- Hobbies -->
+          <div class="col-lg-4 aboutme-cards">
+            <div
+              class="feature-icon d-inline-flex align-items-center justify-content-center flex-shrink-0 me-3"
+            >
+              <i class="bi bi-dpad-fill aboutme-icon"></i>
+            </div>
+            <h3 class="fs-2 text-body-emphasis">Hobbies</h3>
+            <ul class="list-unstyled">
+              <li class="list-item-hover">DIY projects</li>
+              <li class="list-item-hover">Anime & Video games</li>
+              <li class="list-item-hover">Data & Front-End Development</li>
+              <!-- Add more list items for each relevant point -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="container mb-5 component-body-text col-12">
+          <p>
+            Innovative professional with a strong background in Technical
+            Program Management, Data Analytics, Dashboarding, and Front-End
+            Development. With over six years of experience, I excel in leading
+            cross-functional teams and driving customer-centric outcomes. Honors
+            graduate in Computer Management Information Systems, certified in
+            Agile Project Management and Front-End Development. Beyond work, I
+            enjoy time with my dogs, front-end development, data, DIY projects,
+            anime, and video games. My commitment to excellence extends beyond
+            the professional realm, defining my multifaceted approach to life.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="container section" id="services">
+      <!-- Cards -->
+      <div
+        class="container px-4 pb-5 mb-5 text-center border-bottom"
+        id="hanging-icons"
+      >
+        <p class="section-subheader">My</p>
+        <h1 class="fw-bold section-header">Services</h1>
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="services-card card servicesText">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-browser-chrome servicesIcon"></i>
+                </div>
+                <h4 class="card-title mt-3 pb-3 component-header">
+                  Website Development
+                </h4>
+                <p class="card-text mt-3 component-body-text">
+                  Your vision, my code. Elevate your online presence with a
+                  custom-built website, blending modern Bootstrap components
+                  with a personalized touch for a unique digital experience
+                  tailored to you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4">
+            <div class="services-card card servicesText">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-brush-fill servicesIcon"></i>
+                </div>
+                <h4 class="card-title mt-3 pb-3 component-header">
+                  Website Design
+                </h4>
+                <p class="card-text mt-3 component-body-text">
+                  Craft captivating, user-centric designs for a lasting online
+                  impact. From sleek layouts to intuitive navigation, my service
+                  optimizes your brand's visual storytelling.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="services-card card servicesText">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-bar-chart-fill servicesIcon"></i>
+                </div>
+                <h4 class="card-title mt-3 pb-3 component-header">
+                  Dashboard Development
+                </h4>
+                <p class="card-text mt-3 component-body-text">
+                  Power up your insights. Specializing in Power BI, I craft
+                  dynamic dashboards that transform data into actionable
+                  insights for impactful decision-making.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="services-card card servicesText">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-calendar-check-fill servicesIcon"></i>
+                </div>
+                <h4 class="card-title mt-3 pb-3 component-header">
+                  Project/Program Management
+                </h4>
+                <p class="card-text mt-3 component-body-text">
+                  Navigate projects with precision. My specialty ensures
+                  seamless execution from start to finish, elevating your
+                  project delivery with strategic planning and successful
+                  outcomes.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="services-card card servicesText">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-gear-fill servicesIcon"></i>
+                </div>
+                <h4 class="card-title mt-3 pb-3 component-header">
+                  Product Ownership
+                </h4>
+                <p class="card-text mt-3 component-body-text">
+                  Your vision, my stewardship. As your Product Owner, I guide
+                  your product's journey, ensuring it aligns with your goals and
+                  delivers value.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="services-card card servicesText">
+              <div class="card-body">
+                <div class="text-center">
+                  <i class="bi bi-database-fill-check servicesIcon"></i>
+                </div>
+                <h4 class="card-title mt-3 pb-3 component-header">
+                  Data Normalization/ERD
+                </h4>
+                <p class="card-text mt-3 pb-3 component-body-text">
+                  Unlock the potential of organized data. I specialize in
+                  optimizing data and creating precise Entity-Relationship
+                  Diagrams (ERDs) for seamless efficiency tailored to your
+                  objectives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION-->
+    <section id="portfolio">
+      <div class="container mb-5 pb-5 border-bottom">
+        <p class="section-subheader">My</p>
+        <h1 class="fw-bold section-header">Portfolio</h1>
+        <div class="row">
+          <!-- Card 1 -->
+          <div class="col-lg-4 mt-4">
+            <a href="#" class="card-link portfolio-card">
+              <div class="portfolio-card card position-relative">
+                <!-- No "Coming Soon" badge for Card 1 -->
+                <img
+                  class="card-img-top"
+                  src="./images/baby-pfp.jpg"
+                  alt="Personal portfolio image"
+                  style="width: 100%"
+                  loading="lazy"
+                />
+                <div class="card-body">
+                  <h4 class="card-title component-header pb-3">
+                    Personal Portfolio
+                  </h4>
+                  <p class="card-text component-body-text pb-3">
+                    Journey through skills, projects, and design. This portfolio
+                    seamlessly blends visuals with user-friendly navigation,
+                    offering insight into my endeavors.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 mt-4">
+            <div class="portfolio-card card portfolioContent position-relative">
+              <!-- Add the coming-soon-badge div -->
+              <div class="coming-soon-badge">Coming Soon</div>
+              <img
+                class="card-img-top"
+                src="./images/card-blog.jpg"
+                alt="blog web app image"
+                style="width: 100%"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h4 class="card-title component-header pb-3">Blog Web App</h4>
+                <p class="card-text component-body-text pb-3">
+                  Explore and share insights effortlessly. This dynamic platform
+                  combines user-friendly design with seamless functionality for
+                  an engaging blogging experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 mt-4">
+            <div class="portfolio-card card portfolioContent position-relative">
+              <!-- Add the coming-soon-badge div -->
+              <div class="coming-soon-badge">Coming Soon</div>
+              <img
+                class="card-img-top"
+                src="./images/card-product.jpg"
+                alt="Product landing page image"
+                style="width: 100%"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h4 class="card-title component-header pb-3">
+                  Product Landing Page
+                </h4>
+                <p class="card-text component-body-text pb-3">
+                  Captivate your audience with a compelling showcase. This page
+                  seamlessly blends impactful design and intuitive navigation,
+                  turning visitors into customers.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-lg-4 mt-4">
+            <div class="portfolio-card card portfolioContent position-relative">
+              <!-- Add the coming-soon-badge div -->
+              <div class="coming-soon-badge">Coming Soon</div>
+              <img
+                class="card-img-top"
+                src="./images/card-api.jpg"
+                alt="Public API image"
+                style="width: 100%"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h4 class="card-title component-header pb-3">Public API</h4>
+                <p class="card-text component-body-text pb-3">
+                  Open gateway to data. This project creates a seamless API,
+                  offering easy access for developers. With user-friendly
+                  design, it simplifies integration, a valuable resource.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-lg-4 mt-4">
+            <div class="portfolio-card card portfolioContent position-relative">
+              <!-- Add the coming-soon-badge div -->
+              <div class="coming-soon-badge">Coming Soon</div>
+              <img
+                class="card-img-top"
+                src="./images/card-book.jpg"
+                alt="Book Notes image"
+                style="width: 100%"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h4 class="card-title component-header pb-3">Book Notes</h4>
+                <p class="card-text component-body-text pb-3">
+                  Streamline your reading experience with this project. It
+                  offers a simple yet effective way to organize and share your
+                  notes on books, enhancing your literary journey.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-lg-4 mt-4">
+            <div class="portfolio-card card portfolioContent position-relative">
+              <!-- Add the coming-soon-badge div -->
+              <div class="coming-soon-badge">Coming Soon</div>
+              <img
+                class="card-img-top"
+                src="./images/card-dashboard.jpg"
+                alt="Data Dashboard image"
+                style="width: 100%"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h4 class="card-title component-header pb-3">Data Dashboard</h4>
+                <p class="card-text component-body-text pb-3">
+                  Visualize insights at a glance. This project crafts a dynamic
+                  data dashboard, offering real-time analytics with a
+                  user-friendly interface for seamless decision-making and
+                  strategic planning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container mb-5">
+        <p class="section-subheader">How to</p>
+        <h2 class="text-center mb-4 section-header fw-bold">Contact Me</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <!-- Contact Form -->
+            <form>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  class="custom-form-control form-control"
+                  id="subject"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <!-- Button type and information-->
+              <button
+                type="button"
+                class="btn form-btn col-lg-4 col-sm-6"
+                onclick="openEmailClient()"
+                class="form-btn"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer" class="custom-footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <a
+              href="#header"
+              class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            >
+              <i class="bi bi-house-fill custom-footer-icon"></i>
+            </a>
+            <span class="mb-3 mb-md-0 custom-footer-text"
+              >© Caleb Abernathy. 2024</span
+            >
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.linkedin.com/in/cjabernathy/"
+                ><i class="bi bi-linkedin custom-footer-icon"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="text-body-secondary" href="https://github.com/abanashi"
+                ><i class="bi bi-github custom-footer-icon"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.youtube.com/channel/UCRDoQeTLu2T-7VlBkVTYg8w"
+                ><i class="bi bi-youtube custom-footer-icon"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.twitch.tv/abanashi"
+                ><i class="bi bi-twitch custom-footer-icon"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.tiktok.com/@abanashi"
+                ><i class="bi bi-tiktok custom-footer-icon"></i>
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!--theme switch script-->
+    <script src="./scripts/theme-switcher.js"></script>
+    <!--email client script-->
+    <script src="./scripts/open-email-client.js"></script>
+    <!--profile image lazy loading script-->
+    <script src="./scripts/lazy-load-animation.js"></script>
+  </body>
+</html>

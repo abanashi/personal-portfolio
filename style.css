@@ -1,0 +1,422 @@
+#bootstrap-overrides .profile-image {
+  border-radius: 52% 48% 76% 24% / 39% 59% 41% 61%;
+  border: 3px solid var(--primary-color);
+  transition: border-radius 1s ease; /* Transition property with duration and easing */
+
+  animation: swapRadius 8.1s infinite alternate; /* Animation to alternate between the two radii every 8.1 seconds */
+}
+
+@keyframes swapRadius {
+  0% {
+    border-radius: 52% 48% 76% 24% / 39% 59% 41% 61%;
+  }
+
+  100% {
+    border-radius: 48% 52% 24% 76% / 59% 39% 61% 41%;
+  }
+}
+
+.violet-text {
+  color: var(--primary-color);
+}
+
+.black-text {
+  color: var(--primary-font-color);
+}
+
+.text__callout,
+.heading__callout {
+  color: var(--primary-color);
+}
+
+/* ABOUT ME SECTION */
+#bootstrap-overrides .aboutme-icon {
+  font-size: 2.25rem;
+  width: 100%;
+}
+
+.aboutme-cards:hover .list-item-hover {
+  color: var(--emphasis-font-color);
+}
+
+/* Apply a shorter final length underline effect to the h3 elements within .col on hover */
+.aboutme-cards {
+  transition: transform 0.2s ease-in-out; /* Add transition property for the movement animation */
+}
+
+.aboutme-cards:hover {
+  transform: translateY(-2px);
+}
+
+.aboutme-cards h3 {
+  position: relative;
+}
+
+.aboutme-cards h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(var(--emphasis-font-color) 0 0);
+  background-position: 0 50%;
+  background-size: 0% 2px; /* Set the initial length to 0% */
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+
+.aboutme-cards:hover h3::after {
+  background-size: 50% 2px; /* Set the final length to 50% or your desired percentage */
+}
+
+/* Change the color of the icons on hover */
+.aboutme-cards:hover .aboutme-icon {
+  color: var(--emphasis-font-color);
+}
+
+/* Apply color change and bounce animation to the <p> text within the specific div on hover */
+.container.mb-5.component-body-text:hover p {
+  color: var(--emphasis-font-color);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Header */
+#bootstrap-overrides nav.custom-navbar {
+  background-color: var(--primary-color);
+}
+
+#bootstrap-overrides .custom-nav-link {
+  color: var(--nav-link-font-color);
+}
+#bootstrap-overrides .custom-nav-link.active {
+  background-color: var(--primary-color);
+  color: var(--nav-link-font-color);
+}
+
+.custom-nav-link:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#bootstrap-overrides .custom-navbar-logo {
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  color: var(--nav-link-font-color);
+}
+
+#bootstrap-overrides .custom-navbar-logo:hover {
+  transform: rotate(-43deg) scale(1.05);
+}
+
+#bootstrap-overrides .navbar-toggler {
+  color: transparent;
+}
+
+#bootstrap-overrides .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+#bootstrap-overrides .navbar-toggler-icon:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.custom-primary-btn {
+  background-color: var(--primary-color);
+  color: var(--button-font-color);
+}
+
+.custom-primary-btn:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--button-font-color);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+#bootstrap-overrides .custom-primary-btn:active {
+  background-color: var(--primary-color-dark);
+  color: var(--button-font-color);
+}
+
+.custom-secondary-btn {
+  background-color: transparent;
+  color: var(--primary-font-color);
+  border-color: var(--primary-color);
+}
+
+.custom-secondary-btn:hover {
+  border-color: var(--primary-color-dark);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Global Component Classes */
+#bootstrap-overrides .component-header {
+  color: var(--emphasis-font-color);
+}
+
+#bootstrap-overrides .component-body-text {
+  color: var(--primary-font-color);
+  text-align: start;
+}
+
+#bootstrap-overrides .card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Section Headers */
+#bootstrap-overrides .section-header {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+  color: var(--emphasis-font-color);
+}
+
+#bootstrap-overrides .section-subheader {
+  text-align: center;
+  margin-bottom: 0.1rem;
+  color: var(--primary-font-color);
+}
+
+/* SERVICES SECTION */
+.servicesText.card {
+  min-height: 280px;
+}
+
+.servicesText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+}
+
+#bootstrap-overrides.services-card {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#bootstrap-overrides .services-card:hover {
+  transform: translateY(-2px);
+  transition: all 0.24s ease-in-out;
+  border: 1px solid var(--primary-color);
+  border-radius: 95% 5% 95% 5% / 10% 90% 10% 90%;
+  cursor: default;
+  color: var(--emphasis-font-color);
+}
+
+.servicesIcon {
+  font-size: 2.25rem;
+  width: 100%;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card:hover .servicesIcon {
+  color: var(--primary-color);
+}
+
+#bootstrap-overrides .services-card:hover .component-body-text {
+  color: var(--emphasis-font-color);
+}
+
+#bootstrap-overrides .card-body {
+  overflow: hidden;
+}
+
+/* Add the underline effect to the h4 element within services card on hover */
+.services-card h4 {
+  position: relative;
+}
+
+.services-card h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(var(--emphasis-font-color) 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+
+.services-card:hover h4::after {
+  background-size: 100% 2px;
+}
+
+/* PORTFOLIO SECTION */
+#bootstrap-overrides .card-img-top {
+  width: 100%;
+  height: 8vw;
+  object-fit: cover; /* zooms rather than stretching image */
+}
+
+#bootstrap-overrides .card-link {
+  text-decoration: none;
+}
+
+#bootstrap-overrides .portfolio-card {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#bootstrap-overrides .portfolio-card:hover {
+  border: 1px solid var(--primary-color);
+}
+
+#bootstrap-overrides .portfolio-card:hover .component-body-text {
+  color: var(--emphasis-font-color);
+}
+
+/* Add the underline effect to the portfolio card title on hover */
+#bootstrap-overrides .portfolio-card h4 {
+  position: relative;
+}
+
+#bootstrap-overrides .portfolio-card h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(var(--emphasis-font-color) 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+}
+
+#bootstrap-overrides .portfolio-card:hover h4::after {
+  background-size: 100% 2px;
+}
+.coming-soon-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+  color: var(--secondary-emphasis-font-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+/* CONTACT SECTION */
+.form-btn {
+  background-color: var(--primary-color);
+  color: var(--button-font-color);
+}
+
+.form-btn:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--button-font-color);
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Override the focus state properties in your custom class */
+#bootstrap-overrides .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: var(
+    --form-box-shadow-color
+  ); /* Replace with your desired box shadow */
+}
+
+/* FOOTER SECTION */
+#bootstrap-overrides .custom-footer-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+#bootstrap-overrides .custom-footer a:hover .custom-footer-icon {
+  color: var(--primary-color-dark);
+  cursor: pointer;
+}
+
+#bootstrap-overrides .custom-footer {
+  background-color: var(--footer-background-color);
+}
+
+#bootstrap-overrides .custom-footer-text {
+  color: var(--primary-font-color);
+}
+
+/* Root & Light Theme */
+:root,
+[data-bs-theme="light"] {
+  --body-background-color: #fff;
+  --primary-color: #7b2cbf;
+  --primary-color-dark: #5a189a;
+  --primary-color-light: #9d4edd;
+  --primary-color-lighter: #c77dff;
+  --primary-font-color: #212529;
+  --secondary-font-color: #fff;
+  --emphasis-font-color: #000;
+  --secondary-emphasis-font-color: #fff;
+  --nav-link-font-color: #fff;
+  --button-font-color: #fff;
+  --footer-background-color: #f8f9fa;
+  --form-box-shadow-color: 0 0 0 0.2rem rgba(123, 44, 191, 0.25);
+}
+
+@media (prefers-color-scheme: light) {
+  [data-bs-theme="light"] {
+    --body-background-color: #fff;
+    --primary-color: #7b2cbf;
+    --primary-color-dark: #5a189a;
+    --primary-color-light: #9d4edd;
+    --primary-color-lighter: #c77dff;
+    --primary-font-color: #212529;
+    --secondary-font-color: #fff;
+    --emphasis-font-color: #000;
+    --secondary-emphasis-font-color: #fff;
+    --nav-link-font-color: #fff;
+    --button-font-color: #fff;
+    --footer-background-color: #f8f9fa;
+    --form-box-shadow-color: 0 0 0 0.2rem rgba(123, 44, 191, 0.25);
+  }
+}
+
+/* Dark Theme */
+
+[data-bs-theme="dark"] {
+  --body-background-color: #212529;
+  --primary-color: #ff7900;
+  --primary-color-dark: #ff6d00;
+  --primary-color-light: #ff9100;
+  --primary-color-lighter: #ffaa00;
+  --primary-font-color: #dee2e6;
+  --secondary-font-color: #eee;
+  --emphasis-font-color: #fff;
+  --secondary-emphasis-font-color: #000;
+  --nav-link-font-color: #000;
+  --button-font-color: #000;
+  --footer-background-color: #2b3035;
+  --form-box-shadow-color: 0 0 10px rgba(255, 121, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-bs-theme="dark"] {
+    --body-background-color: #212529;
+    --primary-color: #ff7900;
+    --primary-color-dark: #ff6d00;
+    --primary-color-light: #ff9100;
+    --primary-color-lighter: #ffaa00;
+    --primary-font-color: #dee2e6;
+    --secondary-font-color: #eee;
+    --emphasis-font-color: #fff;
+    --secondary-emphasis-font-color: #000;
+    --nav-link-font-color: #000;
+    --button-font-color: #000;
+    --footer-background-color: #2b3035;
+    --form-box-shadow-color: 0 0 10px rgba(255, 121, 0, 0.5);
+  }
+}
