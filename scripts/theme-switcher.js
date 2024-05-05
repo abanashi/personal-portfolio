@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTheme(savedTheme);
   }
 
-  // Event listeners for dropdown items
+  // Event listener for dropdown items
   document.querySelectorAll(".dropdown-item").forEach(function (item) {
     item.addEventListener("click", function (event) {
       event.preventDefault();
@@ -66,9 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Event listener for theme switch link
-  document
-    .getElementById("themeSwitch")
-    .addEventListener("click", function (event) {
+  const themeSwitch = document.getElementById("themeSwitch");
+  if (themeSwitch) {
+    // Check if themeSwitch element exists
+    themeSwitch.addEventListener("click", function (event) {
       const target = event.target;
 
       // Toggle theme when theme switch link is clicked
@@ -76,4 +77,5 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleTheme();
       }
     });
+  }
 });
